@@ -1,0 +1,62 @@
+.faq {
+	float: left;
+	width: 100%;
+	margin: 0 0 30px 0;
+	padding: 0;
+}
+.faq li {
+	float: left;
+	width: 100%;
+	display: inline;
+	margin-bottom: 10px;
+	border: 1px solid #d9d9d9;
+	border-radius: 3px;
+}
+.faq li.active {
+	box-shadow: 0px 3px 5px rgba(0,0,0,.1);
+}
+.faq li h3 {
+	background-color: #3a96cb;
+	color: #FFF;
+	font-size: 24px;
+	line-height: 1em;
+	position: relative;
+	padding: 15px;
+	margin: 0;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.faq li p {
+	display: none;
+	padding: 30px;
+}
+.faq li.active p {
+	display: block;
+}
+.faq li h3:after {
+	content: "+";
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 80px;
+	background: #418dc2;
+	color: #FFF;
+	font-weight: bold;
+	text-align: center;
+	line-height: 60px;
+	border-radius: 0 3px 3px 0;
+}
+.faq li.active h3 {
+	border-radius: 3px 3px 0 0;
+}
+.faq li.active h3:after {
+	content: "-";
+}
+
+h2.faq-title {
+	color: #4694cb;
+	text-transform: uppercase;
+	margin: .25em 0 1em;
+	font-size: 36px;
+}

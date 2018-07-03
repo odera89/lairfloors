@@ -1,0 +1,125 @@
+.slider {
+	.cod_slide_bg {
+		background: url(../images/slider_bg_ba.jpg) no-repeat bottom center;
+		position: absolute;
+		width: 100%;
+		// height: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 12px;
+		background-size: 100% 595px;
+	}
+	
+	.slider-next {
+		border-radius: 50%;		
+		background: url('../img/slider-next.png') no-repeat center center	,
+					url('../img/slide-bg.jpg') no-repeat bottom center ;
+		&[data-slide="0"] {
+			background: url('../img/slider-next.png') no-repeat center center	,
+						url('../images/slider_bg_ba.jpg') no-repeat bottom center ;
+		}
+	}
+	.slider-prev {
+		border-radius: 50%;		
+		background: url('../img/slider-prev.png') no-repeat center center	,
+					url('../img/slide-bg.jpg') no-repeat bottom center ;
+		&[data-slide="0"] {
+			background: url('../img/slider-prev.png') no-repeat center center	,
+						url('../images/slider_bg_ba.jpg') no-repeat bottom center ;
+		}
+	}
+}
+
+.nav-menu {
+	& > li {
+		position: relative;
+		& > a {
+			padding-right: 0;
+			margin-right: 0;
+		}
+		.sub-menu {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			list-style: none;
+			display: none;
+			background: #000;
+			margin-left: 0;
+			padding-left: 0;
+			min-width: 200px;
+			li {
+				list-style: none;
+				padding-left: 0;
+			}
+			&:hover,
+			&:focus {
+				display: block;
+			}
+		}
+		&:hover,
+		&:focus {
+			& > a {
+				color: #4694CB;
+			}
+			.sub-menu {
+				display: block;
+				a {
+					text-transform: uppercase;
+					font-size: 14px;
+				}
+			}	
+		}
+	}
+}
+
+
+input[type=text], input[type=email], input[type=url], input[type=tel], input[type=search], textarea {
+background: #E0E0E0;
+}
+
+.contact-details span.text {
+padding: 0px 0 0 60px;
+}
+
+body.postid-134  #menu-accessories-menu {
+	#menu-item-347 ,
+	#menu-item-346 {
+		display: none;
+	}
+}
+.nav-menu .menu-item > a {
+	padding-right: 0;
+	margin-right: 0;
+}
+.project-desc {
+	padding: 10px;
+	text-align: left;
+	& > *:last-child {
+		margin-bottom: 0;
+	}
+	background-color: #3a96cb;
+	color: #fff;
+	p, li, * {
+		font: #fff;
+	}
+}
+body #gallery-main-pic {
+	height: auto;
+}
+.cod-excerpt {
+	border-top: 1px solid #4794cc;
+	border-bottom: 1px solid #4794cc;
+	color: #4794cc;
+	font-style: italic;
+	padding: 10px 20px;
+	margin-bottom: 20px;
+
+}
+
+blockquote {
+	background-color: #f8f8f8;
+	font-style: italic;
+	color: #4794cc;
+	border-left-color: #4794cc;
+}
