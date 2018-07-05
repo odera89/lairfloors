@@ -40,7 +40,9 @@ class Lair_Video_Widget extends WP_Widget {
 				</video>
 				<div class="content">
 					<div class="inner-content">
+						<ul id="video-slideshow">
 						<?php echo nl2br($instance['text']) ?>
+						</ul>
 					</div>
 				</div>
 			</div>

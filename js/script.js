@@ -166,4 +166,15 @@ jQuery(function() {
 	jQuery('.video-container').vidbacking({
 	    'masked': true
 	});
+
+	jQuery("#video-slideshow > li:gt(0)").hide();
+
+	setInterval(function() { 
+	  jQuery('#video-slideshow > li:first')
+	    .fadeOut(1000)
+	    .next()
+	    .fadeIn(1000)
+	    .end()
+	    .appendTo('#video-slideshow');
+		},  5000);
 });
