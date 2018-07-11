@@ -1,3 +1,12 @@
+@screen-xs:                  768px;
+@screen-sm:                  768px;
+@screen-md:                  992px;
+@screen-lg:                  1200px;
+
+@screen-xs-max:              (@screen-sm - 1);
+@screen-sm-max:              (@screen-md - 1);
+@screen-md-max:              (@screen-lg - 1);
+
 .slider {
 	.cod_slide_bg {
 		background: url(../images/slider_bg_ba.jpg) no-repeat bottom center;
@@ -34,10 +43,12 @@
 .nav-menu {
 	& > li {
 		position: relative;
+
 		& > a {
 			padding-right: 0;
 			margin-right: 0;
 		}
+
 		.sub-menu {
 			position: absolute;
 			top: 100%;
@@ -57,18 +68,41 @@
 				display: block;
 			}
 		}
+
 		&:hover,
 		&:focus {
 			& > a {
 				color: #4694CB;
 			}
-			.sub-menu {
+			> .sub-menu {
 				display: block;
-				a {
-					text-transform: uppercase;
-					font-size: 14px;
+				li {
+					width: 100%;
+					> a {
+						text-transform: uppercase;
+						font-size: 14px;
+					}
+
+					&:hover,
+					&:focus {
+						> .sub-menu {
+							display: block;
+							left: 100%;
+    					top: 0;
+						}
+					}
 				}
 			}	
+		}
+	}
+}
+
+@media (max-width: @screen-xs-max) {
+	.nav-menu {
+		& > li {
+			.sub-menu {
+				left: 0 !important;
+			}
 		}
 	}
 }

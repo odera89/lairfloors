@@ -176,5 +176,5 @@ jQuery(function() {
 	    .fadeIn(1000)
 	    .end()
 	    .appendTo('#video-slideshow');
-		},  5000);
+		},  8250);
 });
