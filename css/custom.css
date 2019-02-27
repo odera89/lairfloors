@@ -60,3 +60,20 @@ h2.faq-title {
 	margin: .25em 0 1em;
 	font-size: 36px;
 }
+
+.nav-menu>li .sub-menu li {
+	position: relative;
+}
+
+#menu-non-flooring .menu-item a span {
+	display: block;
+  color: #4694cb;
+  font-size: 14px;
+  margin-top: 8px;
+  font-weight: 300;
+}
+
+.sidebar .current-menu-item a span,
+.sidebar .menu-item a:hover span {
+	color: #fff !important;
+}
